@@ -11,7 +11,7 @@ const AssignModeratorForm = () => {
 
 		try {
 			const token = localStorage.getItem('token')
-			const response = await axios.patch('http://localhost:8080/api/user/assignModerator', { userId }, {
+			const response = await axios.patch('http://31.128.38.122:8080/api/user/assignModerator', { userId }, {
 				headers: {
 					Authorization: `Bearer ${token}`
 				}
