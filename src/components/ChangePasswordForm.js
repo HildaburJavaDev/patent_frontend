@@ -16,7 +16,7 @@ const ChangePasswordForm = () => {
 
 			try {
 				const token = localStorage.getItem('token')
-				const response = await axios.patch('http://localhost:8080/api/user/updatepassword', {
+				const response = await axios.patch('http://31.128.38.122:8080/api/user/updatepassword', {
 					password: newPassword
 				}, {
 					headers: {
