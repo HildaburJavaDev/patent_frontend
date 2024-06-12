@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const $host = axios.create({
-	baseURL: process.env.APP_API_URL || 'http://localhost:8080'
+	baseURL: process.env.APP_API_URL || 'http://31.128.38.122:8080'
 })
 
 const $authHost = axios.create({
-	baseURL: process.env.APP_API_URL || 'http://localhost:8080'
+	baseURL: process.env.APP_API_URL || 'http://31.128.38.122:8080'
 })
 
 const authInterceptor = config => {
